@@ -13,7 +13,7 @@ class TestROACollector:
     # NOTE: no point in parametrizing. Doubles runtime of test, and
     # might as well just test all branches at once since it's a system test
     # and I'm just trying to do this quickly
-    def test_roa_collector(self, tmp_path, write_csv=True):
+    def test_roa_collector(self, tmp_path, write_csv=True):  # noqa
         """System test for the ROA Collector"""
 
         csv_path = tmp_path / "test.csv"
